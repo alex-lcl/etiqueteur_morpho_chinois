@@ -1,0 +1,34 @@
+{
+    "data_loader": {
+        "batch_size": 21,
+        "shuffle": true
+    },
+    "dataset_reader": {
+        "max_instances": 1000,
+        "type": "modules.readers.ZH_POS_Reader"
+    },
+    "model": {
+        "dim": 195,
+        "type": "modules.models.POS_ZH_ModelGru"
+    },
+    "train_data_path": "/media/sf_M1/S2/MethodeApprentissageAuto/_projet/data/UD_Chinese-GSDSimp/zh_gsdsimp-ud-train.conllu",
+    "trainer": {
+        //"learning_rate_scheduler": {
+        //    "factor": 0.5,
+        //    "mode": "max",
+        //    "patience": 2,
+        //    "threshold": 0.01,
+        //    "threshold_mode": "abs",
+        //    "type": "reduce_on_plateau",
+        //    "verbose": true
+        //},
+        "num_epochs": 756,
+        "optimizer": {
+            "lr": 0.010816479738477752,
+            "type": "adam"
+        },
+        "patience": 3,
+        "validation_metric": "+acc"
+    },
+    "validation_data_path": "/media/sf_M1/S2/MethodeApprentissageAuto/_projet/data/UD_Chinese-GSDSimp/zh_gsdsimp-ud-dev.conllu"
+}

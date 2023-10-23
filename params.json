@@ -1,0 +1,35 @@
+[
+  {
+    "type": "int",
+    "attributes": {
+      "name": "dim",
+      "low": 5,
+      "high": 300
+    }
+  },
+  {
+    "type": "int",
+    "attributes": {
+      "name": "batch",
+      "low": 5,
+      "high": 256
+    }
+  },
+  {
+    "type": "float",
+    "attributes": {
+      "name": "lr",
+      "low": 5e-3,
+      "high": 5e-2,
+      "log": true
+    }
+  },
+    {
+    "type": "int",
+    "attributes": {
+      "name": "num_epochs",
+      "low": 5,
+      "high": 1000
+    }
+  }
+]

@@ -1,0 +1,1 @@
+allennlp tune config.jsonnet params.json --serialization-dir ~/Document/result/optuna6 --study-name allennlp-optuna_projet6 --timeout 3600 --direction maximize --metrics "best_validation_acc"
